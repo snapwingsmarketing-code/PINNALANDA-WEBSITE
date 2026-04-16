@@ -4,208 +4,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grand Royal Pinnalanda | Premium Riverside Destination</title>
+    <title>Grand Royal Pinnalanda | Luxury Hotel & Riverside Dining</title>
     <meta name="description"
-        content="Experience world-class riverside dining with a view of bathing elephants. The perfect venue for luxury tropical weddings in Pinnawala, Sri Lanka.">
+        content="Experience absolute luxury and world-class riverside dining with a view of bathing elephants in Pinnawala.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
+    <!-- Transparent to Solid Navigation -->
     <nav id="navbar">
         <a href="#home" class="logo-container">
-            <div class="logo-text">Grand Royal Pinnalanda</div>
+            <img src="logo.jpg" alt="Grand Royal Pinnalanda Logo" class="nav-logo">
         </a>
+
         <div class="nav-links">
-            <a href="#home">Home</a>
             <a href="#dining">Dining</a>
-            <a href="#weddings">Weddings</a>
-            <a href="#gallery">Gallery</a>
+            <a href="#weddings">Weddings & Events</a>
+            <a href="#gallery">Experiences</a>
             <a href="#contact">Contact</a>
         </div>
-        <div class="social-top">
-            <a href="https://www.facebook.com/grandroyalpinnalanda" target="_blank"><i data-lucide="facebook"
-                    style="width: 18px;"></i></a>
-            <a href="https://wa.me/94740988588" target="_blank"><i data-lucide="message-circle"
-                    style="width: 18px;"></i></a>
-            <a href="#"><i data-lucide="instagram" style="width: 18px;"></i></a>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-toggle">
+            <i data-lucide="menu"></i>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="fade-in">Luxury by the River</h1>
-            <p class="fade-in">A premium experience in Pinnawala. Authentic heritage cuisine and royal tropical weddings overlooking majestic bathing elephants.</p>
-            <div class="fade-in" style="display: flex; gap: 20px; justify-content: center; margin-top: 30px;">
-                <a href="#dining" class="btn btn-primary">Discover Dining</a>
-                <a href="https://wa.me/94740988588" class="btn btn-outline" target="_blank">Contact Us</a>
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in">
+            <span class="subtitle">Welcome to a majestic sanctuary of elegance</span>
+            <h1>Where Luxury Meets the River</h1>
+            
+            <div style="margin-top: 35px; margin-bottom: 20px;">
+                <a href="https://wa.me/94740988588" target="_blank" class="btn-whatsapp">
+                    <i data-lucide="message-circle" style="width: 18px;"></i>
+                    Inquire on WhatsApp
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Dining Section -->
-    <section id="dining" class="container">
-        <div class="about">
-            <div class="about-img">
-                <img src="dining_view.jpg" alt="Riverside Fine Dining">
+    <!-- Animated Mini Previews overlapping hero -->
+    <div class="container relative-preview">
+        <div class="hero-previews-container fade-in-up">
+            
+            <!-- Preview 1: Dining -->
+            <div class="preview-card">
+                <div class="crossfade-slider">
+                    <img src="dining_view.jpg" alt="Dining preview 1">
+                    <img src="s2.jpg" alt="Dining preview 2">
+                    <img src="s3.jpg" alt="Dining preview 3">
+                </div>
+                <div class="preview-label">Culinary Journeys</div>
             </div>
-            <div class="about-content">
-                <span class="section-tag">Culinary Excellence</span>
-                <h2 class="section-title">Dining with Giants</h2>
-                <p>Immerse yourself in a dining experience like no other. Our open-air terrace offers an unobstructed, 180-degree vista of the river, where majestic elephants bathe in the warm afternoon sun. Every detail is curated for an unforgettable atmosphere.</p>
+
+            <!-- Preview 2: Weddings -->
+            <div class="preview-card">
+                <div class="crossfade-slider delay-1">
+                    <img src="wedding_detail.jpg" alt="Wedding preview 1">
+                    <img src="wedding_group.jpg" alt="Wedding preview 2">
+                    <img src="Weddings Indoor and Outdoor/S8 (6).jpg" alt="Wedding preview 3">
+                </div>
+                <div class="preview-label">Royal Weddings</div>
+            </div>
+
+            <!-- Preview 3: Scenery -->
+            <div class="preview-card">
+                <div class="crossfade-slider delay-2">
+                    <img src="hero_main.jpg" alt="Scenery preview 1">
+                    <img src="s1.jpg" alt="Scenery preview 2">
+                    <img src="Weddings Indoor and Outdoor/S8 (12).jpg" alt="Scenery preview 3">
+                </div>
+                <div class="preview-label">Riverside Serenity</div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Introduction / Discover -->
+    <section id="discover" class="container offset-section text-center" style="padding-top: 150px;">
+        <span class="section-tag">The Grand Royal Experience</span>
+        <h2 class="section-title">A Sanctuary in Pinnawala</h2>
+        <p class="section-intro">
+            Embark on a journey of extraordinary sensations. Set against the breathtaking backdrop of the Maha Oya river, our estate is renowned for seamlessly blending heritage hospitality with uninterrupted views of majestic bathing elephants.
+        </p>
+    </section>
+
+    <!-- Staggered Content Blocks (Heritance Style) -->
+    
+    <!-- Block 1: Dining -->
+    <section id="dining" class="staggered-block">
+        <div class="stagger-image">
+            <img src="dining_view.jpg" alt="Fine Dining">
+        </div>
+        <div class="stagger-content">
+            <span class="section-tag">Culinary Journeys</span>
+            <h2 class="section-title">Dining with Giants</h2>
+            <p>
+                Immerse yourself in a dining experience like no other. Our signature open-air terrace offers an unobstructed, 180-degree vista of the river. Enjoy authentic heritage cuisine and international fine dining while observing elephants in their natural morning or afternoon routines.
+            </p>
+            <a href="#contact" class="btn-outline-dark">Reserve Your Table</a>
+        </div>
+    </section>
+
+    <!-- Block 2: Weddings -->
+    <section id="weddings" class="staggered-block reverse">
+        <div class="stagger-image">
+            <img src="wedding_detail.jpg" alt="Destination Weddings">
+        </div>
+        <div class="stagger-content">
+            <span class="section-tag">Unforgettable Moments</span>
+            <h2 class="section-title">Royal Destination Weddings</h2>
+            <p>
+                Celebrate your union where wild elegance meets refined luxury. We specialize in curating breathtaking bespoke weddings, providing a riverside venue that sets the perfect stage for traditional ceremonies, vibrant receptions, and timeless memories.
+            </p>
+            <a href="#contact" class="btn-outline-dark">Plan Your Wedding</a>
+        </div>
+    </section>
+
+
+
+    <!-- Block 4: Video Highlight -->
+    <section class="staggered-block reverse">
+        <div class="stagger-image" style="display: flex; justify-content: center;">
+            <iframe width="315" height="560" src="https://www.youtube.com/embed/iELnzlsxCyk?autoplay=1&mute=1&loop=1&playlist=iELnzlsxCyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="box-shadow: 0 20px 50px rgba(0,0,0,0.15); border-radius: 8px;"></iframe>
+        </div>
+        <div class="stagger-content">
+            <span class="section-tag">Cinematic Experience</span>
+            <h2 class="section-title">A Glimpse of Magic</h2>
+            <p>
+                Take a moment to experience the gentle rhythm of the river and the magnificent elephants interacting in their natural habitat. Life at Grand Royal Pinnalanda is an immersive, living piece of art.
+            </p>
+        </div>
+    </section>
+
+    <!-- Block 5: Second Video Highlight -->
+    <section class="staggered-block">
+        <div class="stagger-image" style="display: flex; justify-content: center;">
+            <iframe width="315" height="560" src="https://www.youtube.com/embed/HWDgsCaUimE?autoplay=1&mute=1&loop=1&playlist=HWDgsCaUimE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="box-shadow: 0 20px 50px rgba(0,0,0,0.15); border-radius: 8px;"></iframe>
+        </div>
+        <div class="stagger-content">
+            <span class="section-tag">Tropical Harmony</span>
+            <h2 class="section-title">The Royal Welcome</h2>
+            <p>
+                From the gentle breeze rustling through the palm trees to the majestic sights of our gentle giants. Every moment spent with us is a breathtaking masterpiece crafted by nature, waiting just for you.
+            </p>
+        </div>
+    </section>
+
+    <!-- Wedding Portfolio Section -->
+    <section id="wedding-portfolio" style="background: var(--white); padding: 100px 0;">
+        <div class="container text-center">
+            <h2 class="section-title">A Wedding Like No Other</h2>
+        </div>
+
+        <div class="wedding-gallery fade-in-up" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <div class="gallery-grid">
+                <!-- Wedding 1 -->
+                <div class="gal-item"><img src="Weddings Indoor and Outdoor/S8 (1).jpg" alt="Wedding"><div class="gal-overlay"><span></span></div></div>
+                <div class="gal-item"><img src="Weddings Indoor and Outdoor/S8 (2).jpg" alt="Wedding"><div class="gal-overlay"><span></span></div></div>
+                <div class="gal-item"><img src="Weddings Indoor and Outdoor/S8 (3).jpg" alt="Wedding"><div class="gal-overlay"><span></span></div></div>
+                <div class="gal-item"><img src="Weddings Indoor and Outdoor/S8 (4).jpg" alt="Wedding"><div class="gal-overlay"><span></span></div></div>
                 
-                <div class="features-grid">
-                    <div class="feature-item">
-                        <div class="feature-icon"><i data-lucide="utensils" style="width: 20px;"></i></div>
-                        <span class="feature-text">Authentic Heritage Cuisine</span>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon"><i data-lucide="glass-water" style="width: 20px;"></i></div>
-                        <span class="feature-text">International Fine Dining</span>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon"><i data-lucide="sun" style="width: 20px;"></i></div>
-                        <span class="feature-text">Riverfront Open-Air Terrace</span>
-                    </div>
-                    <div class="feature-item">
-                        <div class="feature-icon"><i data-lucide="wine" style="width: 20px;"></i></div>
-                        <span class="feature-text">Premium Sunset Cocktails</span>
-                    </div>
-                </div>
-                <div style="margin-top: 40px;">
-                    <a href="#contact" class="btn btn-primary" style="padding: 12px 30px; font-size: 0.75rem;">Reserve a Table</a>
-                </div>
+                <!-- Wedding 2 -->
+                <div class="gal-item"><img src="Weddings Indoor and Outdoor/S8 (6).jpg" alt="Wedding"><div class="gal-overlay"><span></span></div></div>
+                <div class="gal-item"><img src="Weddings Indoor and Outdoor/S8 (7).jpg" alt="Wedding"><div class="gal-overlay"><span></span></div></div>
+                <div class="gal-item"><img src="Weddings Indoor and Outdoor/S8 (8).jpg" alt="Wedding"><div class="gal-overlay"><span></span></div></div>
+                <div class="gal-item"><img src="Weddings Indoor and Outdoor/S8 (9).jpg" alt="Wedding"><div class="gal-overlay"><span></span></div></div>
+
+                <!-- Wedding 3 -->
+                <div class="gal-item"><img src="Weddings Indoor and Outdoor/S8 (10).jpg" alt="Wedding"><div class="gal-overlay"><span></span></div></div>
+                <div class="gal-item"><img src="Weddings Indoor and Outdoor/S8 (11).jpg" alt="Wedding"><div class="gal-overlay"><span></span></div></div>
+                <div class="gal-item"><img src="Weddings Indoor and Outdoor/S8 (12).jpg" alt="Wedding"><div class="gal-overlay"><span></span></div></div>
+                <div class="gal-item"><img src="Weddings Indoor and Outdoor/S8 (5).jpg" alt="Wedding"><div class="gal-overlay"><span></span></div></div>
             </div>
         </div>
     </section>
 
-    <!-- Weddings Section -->
-    <section id="weddings" class="accommodation light">
-        <div class="container about" style="grid-template-columns: 1fr 1fr;">
-            <div class="about-content">
-                <span class="section-tag" style="color: var(--primary-hover);">Destination Weddings</span>
-                <h2 class="section-title light">A Royal Union by the River</h2>
-                <p>Celebrate your momentous day where wild elegance meets refined luxury. Grand Royal Pinnalanda specializes in curating bespoke destination weddings, providing a breathtaking riverside backdrop for traditional Poruwa ceremonies and opulent modern receptions.</p>
-                <p style="margin-top: 20px;">From customized gourmet menus to awe-inspiring elephant processions, our dedicated wedding artisans ensure your day is flawlessly executed and completely unforgettable.</p>
-                <a href="https://wa.me/94740988588" target="_blank" class="btn btn-primary" style="margin-top: 40px;">Inquire via WhatsApp</a>
-            </div>
-            <div class="about-img">
-                <img src="wedding_group.jpg" alt="Luxury Wedding Venue">
+    <!-- Scrolling Gallery -->
+    <section id="gallery" style="background: #F8F7F4; padding: 100px 0;">
+        <div class="container text-center">
+            <span class="section-tag">A Visual Journey</span>
+            <h2 class="section-title">Moments of Grandeur</h2>
+        </div>
+        
+        <div class="scrolling-gallery">
+            <div class="gallery-track">
+                <img src="hero_main.jpg" alt="Gallery">
+                <img src="dining_view.jpg" alt="Gallery">
+                <img src="wedding_group.jpg" alt="Gallery">
+                <img src="Weddings Indoor and Outdoor/S8 (23).jpg" alt="Gallery">
+                <img src="wedding_detail.jpg" alt="Gallery">
+                <img src="s1.jpg" alt="Gallery">
+                <img src="s2.jpg" alt="Gallery">
+                <img src="s3.jpg" alt="Gallery">
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="container">
-        <div style="text-align: center; margin-bottom: 60px;">
-            <span class="section-tag">Moments Captured</span>
-            <h2 class="section-title">The Grand Royal Experience</h2>
-            <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;">A glimpse into the elegance, nature, and luxury that await you at our riverside escape.</p>
+    <!-- Location Section -->
+    <section id="location" style="background: var(--white); padding: 80px 0 0 0;">
+        <div class="container text-center" style="margin-bottom: 40px;">
+            <span class="section-tag" style="color: var(--dark);">Find Us</span>
+            <h2 class="section-title">Our Location</h2>
         </div>
-        <div class="gallery-grid">
-            <div class="gallery-item"><img src="hero_main.jpg" alt="Riverside View"></div>
-            <div class="gallery-item"><img src="dining_view.jpg" alt="Dining Terrace"></div>
-            <div class="gallery-item"><img src="fine_dining_restaurant.png" alt="Fine Dining"></div>
-            <div class="gallery-item"><img src="wedding_group.jpg" alt="Wedding Celebration"></div>
-            <div class="gallery-item"><img src="wedding_detail.jpg" alt="Wedding Details"></div>
-            <div class="gallery-item"><img src="luxury_room_river_view.png" alt="Luxury Room"></div>
-            <div class="gallery-item"><img src="wedding_decor.png" alt="Wedding Decor"></div>
-            <div class="gallery-item"><img src="hero_elephant_bathing.png" alt="Elephants Bathing"></div>
+        <div style="width: 100%; height: 450px; overflow: hidden; line-height: 0;">
+            <iframe width="100%" height="100%" src="https://maps.google.com/maps?q=Grand%20Royal%20Pinnalanda,%20Sri%20Lanka&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="border:0; filter: grayscale(20%);"></iframe>
         </div>
     </section>
 
-    <section id="contact" class="container">
-        <div class="contact-container">
-            <div>
-                <span class="section-tag">Get in Touch</span>
-                <h2 class="section-title">Reservations & Inquiries</h2>
-                <p style="margin-bottom: 40px; color: var(--text-muted); max-width: 400px;">For table reservations or to begin planning your bespoke wedding, our concierge team is at your service round-the-clock.</p>
+    <!-- Contact & Footer Area -->
+    <section id="contact" class="footer-contact">
+        <div class="container">
+            <div class="footer-grid">
                 
-                <div class="contact-info-block">
-                    <i data-lucide="map-pin"></i>
-                    <div>
-                        <p><strong>Grand Royal Pinnalanda</strong></p>
-                        <p style="color: var(--text-muted); font-size: 0.95rem; margin-top: 5px;">Pinnawala, Rambukkana, Sri Lanka</p>
-                    </div>
+                <!-- Contact Info -->
+                <div class="footer-col">
+                    <div class="footer-logo">GRAND ROYAL<br><span>PINNALANDA</span></div>
+                    <p class="footer-desc">The ultimate premium riverside destination in Pinnawala, blending profound nature with unmatched luxury.</p>
                 </div>
-                <div class="contact-info-block">
-                    <i data-lucide="phone"></i>
-                    <div>
-                        <p><a href="tel:+94352265297" style="color: inherit; text-decoration: none;">+94 35 226 5297</a></p>
-                    </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4>Reservations</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:+94352265297">T: +94 35 226 5297</a></li>
+                        <li><a href="https://wa.me/94740988588" target="_blank">WhatsApp: +94 74 098 8588</a></li>
+                        <li><a href="mailto:hotel.pinnalanda@gmail.com">hotel.pinnalanda@gmail.com</a></li>
+                    </ul>
                 </div>
-                <div class="contact-info-block">
-                    <i data-lucide="message-circle" style="color: #25D366;"></i>
-                    <div>
-                        <p><a href="https://wa.me/94740988588" style="color: inherit; text-decoration: none;">WhatsApp: +94 74 098 8588</a></p>
-                    </div>
-                </div>
-                <div class="contact-info-block">
-                    <i data-lucide="mail"></i>
-                    <div>
-                        <p><a href="mailto:hotel.pinnalanda@gmail.com" style="color: inherit; text-decoration: none;">hotel.pinnalanda@gmail.com</a></p>
+
+                <div class="footer-col">
+                    <h4>Address</h4>
+                    <p class="footer-links">
+                        Pinnawala,<br>
+                        Rambukkana,<br>
+                        Sri Lanka.
+                    </p>
+                    <div class="social-icons" style="margin-top: 20px;">
+                        <a href="https://web.facebook.com/grandroyalpinnalanda" target="_blank"><i data-lucide="facebook"></i></a>
+                        <a href="https://wa.me/94740988588" target="_blank"><i data-lucide="message-circle"></i></a>
+                        <a href="https://www.tiktok.com/@grand.royal.pinna" target="_blank" style="display: flex; align-items: center; justify-content: center;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/>
+                            </svg>
+                        </a>
+                        <a href="#"><i data-lucide="instagram"></i></a>
                     </div>
                 </div>
 
-                <div style="margin-top: 50px;">
-                    <h3 class="elegant-serif" style="font-size: 1.5rem; margin-bottom: 20px;">Follow Our Journey</h3>
-                    <div style="display: flex; gap: 15px;">
-                        <a href="https://www.facebook.com/grandroyalpinnalanda" target="_blank" class="social-link" style="color:var(--text-main); border-color:var(--text-muted);"><i data-lucide="facebook"></i></a>
-                        <a href="https://wa.me/94740988588" target="_blank" class="social-link" style="color:var(--text-main); border-color:var(--text-muted);"><i data-lucide="message-circle"></i></a>
-                        <a href="#" class="social-link" style="color:var(--text-main); border-color:var(--text-muted);"><i data-lucide="instagram"></i></a>
-                    </div>
-                </div>
             </div>
             
-            <form class="contact-form">
-                <h3 class="elegant-serif" style="font-size: 2rem; margin-bottom: 30px; color: var(--secondary-color);">Send an Inquiry</h3>
-                <div class="form-group">
-                    <label>Your Full Name</label>
-                    <input type="text" placeholder="e.g. John Doe" required>
-                </div>
-                <div class="form-group">
-                    <label>Inquiry Type</label>
-                    <div style="position: relative;">
-                        <select required>
-                            <option value="" disabled selected>Select an option...</option>
-                            <option>Table Reservation</option>
-                            <option>Wedding & Events</option>
-                            <option>Private Party</option>
-                            <option>General Inquiry</option>
-                        </select>
-                        <i data-lucide="chevron-down" style="position: absolute; right: 0; top: 15px; color: var(--text-muted); pointer-events: none;"></i>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Your Message</label>
-                    <textarea rows="4" placeholder="Tell us about your requirements..." required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Send Message</button>
-            </form>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Grand Royal Pinnalanda. All Rights Reserved.</p>
+            </div>
         </div>
     </section>
-
-    <footer>
-        <div class="footer-logo">Grand Royal Pinnalanda</div>
-        <p style="color: rgba(255,255,255,0.7); max-width: 500px; margin: 0 auto; margin-bottom: 30px; font-weight: 300;">The ultimate premium riverside destination in Pinnawala, where nature's majesty meets unparalleled luxury.</p>
-        
-        <div style="display: flex; gap: 20px; justify-content: center; margin-bottom: 40px;">
-            <a href="https://www.facebook.com/grandroyalpinnalanda" target="_blank" class="social-link"><i data-lucide="facebook"></i></a>
-            <a href="https://wa.me/94740988588" target="_blank" class="social-link"><i data-lucide="message-circle"></i></a>
-            <a href="#" class="social-link"><i data-lucide="instagram"></i></a>
-        </div>
-        
-        <div style="color: rgba(207, 169, 94, 0.6); font-size: 0.85rem; letter-spacing: 1px;">
-            &copy; 2026 GRAND ROYAL PINNALANDA. ALL RIGHTS RESERVED.
-        </div>
-    </footer>
 
     <script src="script.js"></script>
     <script>
         lucide.createIcons();
+        
+        // Sticky Navbar script
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
     </script>
 </body>
 

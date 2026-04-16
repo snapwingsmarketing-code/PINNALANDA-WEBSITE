@@ -44,8 +44,9 @@ document.querySelectorAll('section').forEach(section => {
     observer.observe(section);
 });
 
-// Intersection observer logic adjustment for the custom fade-in
 document.addEventListener('DOMContentLoaded', () => {
-    const fadeElements = document.querySelectorAll('.fade-in');
+    const fadeElements = document.querySelectorAll('.fade-in, .fade-in-up');
     fadeElements.forEach(el => observer.observe(el));
 });
+
+
